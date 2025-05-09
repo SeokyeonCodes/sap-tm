@@ -1,6 +1,6 @@
 <a name="top"></a>
 
-# Enhancement location
+# Enhancement Spot
 
 - [Determination](#determination)
   - [/SCMTMS/TRQ](#/SCMTMS/TRQ)
