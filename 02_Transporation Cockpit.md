@@ -13,7 +13,8 @@ You can determine values for the query attributes before executing the specific 
 Ex) Assume that you add a condition field in your additional selection such as
     BO_NAME = 'FU' / FIELD = 'RESP_PERSON' / LOW Value = 'SY-UNAME'
     then where condition might be (TOR_ROOT)RESP_PERSON = 'SY-UNAME so you should change this to SAP user ID who logged in.
-Sample Source)
+Sample Source Code)
+``` abap
     LOOP AT ct_selopt_add ASSIGNING FIELD-SYMBOL(<ls_selopt_add>).
 
       CASE <ls_selopt_add>-attribute_name.
@@ -25,6 +26,7 @@ Sample Source)
           CONTINUE.
       ENDCASE.
     ENDLOOP.
+```
 
 ### /SCMTMS/TOR
 #### ROOT
